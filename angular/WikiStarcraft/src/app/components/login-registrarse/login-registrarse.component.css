@@ -1,0 +1,64 @@
+.contenedor2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor2>.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
+    border: blue 1px solid;
+    -webkit-box-shadow: inset 10px 10px 40px 11px rgba(34, 159, 204, 1);
+    -moz-box-shadow: inset 10px 10px 40px 11px rgba(34, 159, 204, 1);
+    box-shadow: inset 10px 10px 40px 11px rgba(34, 159, 204, 1);
+    padding: 2rem;
+}
+
+.contenedor2>.formulario>h4 {
+    color: red;
+    font-size: 1rem;
+}
+
+.contenedor2>.formulario>a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: .8rem;
+    margin: 15px;
+}
+
+.contenedor2>.formulario>a:hover {
+    color: rgb(241, 248, 139);
+    text-decoration: none;
+    font-size: .90rem;
+}
+
+.contenedor2>.formulario>button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Eurostile Extd", "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    background-origin: border-box;
+    font-size: 18px;
+    width: auto;
+    border-width: 17px 60px;
+    border-style: solid;
+    padding: 0px;
+    border-color: transparent;
+    margin: 24px;
+    box-shadow: 0 0 20px #4f9;
+    background-color: rgb(217, 217, 217);
+    color: rgb(153, 204, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 51, 102, 0.9));
+}
+
+.contenedor2>.formulario>button:hover {
+    box-shadow: 0px 0px 30px #ffffff;
+}

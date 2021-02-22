@@ -1,0 +1,16 @@
+<div class="fondo">
+    <main>
+        <div class="card" *ngFor="let tarjeta of listaInfo ; let i = index">
+            <img src="{{tarjeta.img}}" class="card-img-top" alt="...">
+            <h5 class="card-title">{{tarjeta.titulo}}</h5>
+            <p class="card-text">{{tarjeta.info}}</p>
+            <div class="btn">
+                <a [routerLink]="'/tarjeta'" (click)="obtenerPosInfo(i)" class=" btn btn-primary">Mas Informacion</a>
+            </div>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" (keyup.enter)="buscarInfo(buscarTexto.value)" (keydown.enter)="handleKeyEnter($event)" #buscarTexto>
+            <button class="btn btn-outline-success my-2 my-sm-0 buscador" (click)="buscarInfo(buscarTexto.value)" type="submit">Buscar informacion</button>
+        </form>
+    </main>
+</div>

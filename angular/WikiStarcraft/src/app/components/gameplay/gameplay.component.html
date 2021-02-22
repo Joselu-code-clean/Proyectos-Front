@@ -1,0 +1,15 @@
+<div class="gameplay">
+    <div class="boton">
+        <button class="bt1" (click)="ocultarVideos()">Ocultar Seccion Videos</button>
+        <button class="bt1" (click)="MostrarVideos()">Mostrar Seccion Videos</button>
+    </div>
+    <video autoplay=true loop id="video_background">
+        <source src="../../../assets/videos/intro.mp4 ">
+    </video>
+    <div class="containerTarjet" *ngIf="getMostrar() == false">
+        <div class="tarjet t1 " *ngFor="let imagen of listaImg ;let i = index">
+            <h1>{{mostrarTitulo(i)}}</h1>
+            <a [routerLink]="'/video'" (click)="obtenerPosVideo(i)"></a>
+        </div>
+    </div>
+</div>

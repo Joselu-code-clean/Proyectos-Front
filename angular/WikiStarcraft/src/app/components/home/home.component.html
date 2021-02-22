@@ -1,0 +1,14 @@
+<div class="fondo">
+    <div class="main">
+        <div class="containerTitle">
+            <h1 class="title">WikiStracraft II</h1>
+        </div>
+        <h2 class="info">
+            Vive el juego que redefinió el género de la estrategia en tiempo real. Terran, zerg o protoss: la conquista de la galaxia está a tu alcance.
+        </h2>
+    </div>
+    <div class="botones">
+        <button *ngIf="!_auth.comprobarLogin()" type="button" class="btn btn-outline-primary bt1" [routerLink]="'/info'">Ir a Info</button>
+        <button *ngIf="!_auth.comprobarLogin()" type="button" class="btn btn-outline-success bt2" [routerLink]="'/login'">Iniciar Sesion</button>
+    </div>
+</div>

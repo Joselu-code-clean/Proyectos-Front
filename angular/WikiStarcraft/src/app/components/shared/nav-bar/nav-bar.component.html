@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg ">
+
+    <a class="navbar-brand" href="#">
+        <img src="../../../../assets/img/icon-navBa.png" width="80px" height="30px" class="d-inline-block align-top" alt="LOGO">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" routerLinkActive="active">
+                <a routerLink="'/home'" class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" *ngIf="ocultar()">
+                <a [routerLink]="'/galeria'" class="nav-link">Galeria</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" *ngIf="ocultar()">
+                <a [routerLink]="'/gameplay'" class="nav-link">Gameplay</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a [routerLink]="'/info'" class="nav-link">Informacion</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0 btnSalir" type="submit" (click)="desloguear()" *ngIf="ocultar()">Salir</button>
+        </form>
+    </div>
+</nav>
