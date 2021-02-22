@@ -1,0 +1,85 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+
+/* Core CSS required for Ionic components to work properly */
+
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* Estilos generales */
+
+ion-content {
+    --background: url(./assets/fondo/fondo.jpg) no-repeat center/cover fixed;
+}
+
+#main-content {
+    --ion-background-color: black;
+    --ion-text-color: white;
+}
+
+
+/*Configuracion del ion-tabs*/
+
+ion-tabs {
+    display: block;
+}
+
+ion-tab-bar,
+ion-tab-button {
+    background-color: black;
+}
+
+
+/*Fin configuracion ion-tabs*/
+
+
+/* Estilos para el sideMenu */
+
+html body app-root ion-app main ion-split-pane ion-menu ion-content ion-list {
+    --ion-background-color: #573b23;
+}
+
+#itemList {
+    --ion-background-color: linear-gradient(180deg, #fa8423cc, #573b23);
+    margin-top: .5rem;
+    --ion-text-color: white;
+}
+
+html body app-root ion-app main ion-split-pane ion-menu ion-header ion-toolbar {
+    --ion-background-color: black;
+    --ion-text-color: white;
+}
+
+#iconRouter {
+    color: white;
+}
+
+
+/* Fin estilos de sidemenu */
+
+.secondaryAlert{
+    color: red !important;
+}

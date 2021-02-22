@@ -1,0 +1,23 @@
+.botonera {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 100vw;
+}
+
+.botonera>button {
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 40%;
+    width: 40%;
+    margin: .5rem;
+    padding: 1.5rem;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(180deg, #fa2323cc, #222222);
+    border-radius: 6px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .45);
+    text-shadow: 0 0 4px rgba(0, 0, 0, .3), 0 0 8px rgba(0, 0, 0, .3);
+    letter-spacing: .85px;
+    font-size: .8em;
+}

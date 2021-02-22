@@ -1,0 +1,25 @@
+<ion-content>
+    <main>
+        <!-- PARA MOSTRAR LAS ESTADISTICAS -->
+        <div class="statistics">
+            <span> Total de Ejercicios realizados: <span class="number"> {{totalExercise}} </span> </span>
+            <span> Total de Tiempo entrenando: <span class="number"> {{totalTime}}m </span> </span>
+        </div>
+        <!-- NIVELES DE INTENSIDAD -->
+        <h1 class="title">niveles</h1>
+        <div class="levelList">
+            <div *ngFor="let level of levels; let i = index" (click)="goToNivel(i)">
+                <span>{{level}}</span>
+            </div>
+        </div>
+        <div class="myRoutine" (click)="goToMyRoutine()">
+            <p>Mis Rutinas</p>
+        </div>
+        <div class="contentLog-out">
+            <div class="log-out" (click)="onLogout()">
+                <p>Cerrar Sesion</p>
+            </div>
+        </div>
+
+    </main>
+</ion-content>

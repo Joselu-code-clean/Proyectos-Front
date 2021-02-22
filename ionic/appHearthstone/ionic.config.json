@@ -1,0 +1,7 @@
+{
+  "name": "appHearthstone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

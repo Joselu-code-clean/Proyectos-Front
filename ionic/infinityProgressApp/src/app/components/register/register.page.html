@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Registro</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <main>
+        <img src="../../../assets/images/loginIP.jpeg" alt="fondo de InfinityProgress">
+        <div id="dashboard">
+            <ion-item>
+                <ion-label>Email:</ion-label>
+                <ion-input required email type="email" [(ngModel)]="user.email"></ion-input>
+            </ion-item>
+            <p *ngIf="errorEmail">Formato del correo: example@gmail.com/es</p>
+            <ion-item>
+                <ion-label>Contraseña:</ion-label>
+                <ion-input required password minlength="4" type="password" [(ngModel)]="user.password"></ion-input>
+            </ion-item>
+            <p *ngIf="errorPass">La longitud de la contraseña tiene que ser minimo 4</p>
+            <div class="botonera">
+                <button size="large" (click)="onRegister()">Crear Cuenta</button>
+                <button size="large" routerLink="/login">Ir a Login</button>
+            </div>
+        </div>
+    </main>
+</ion-content>

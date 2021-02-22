@@ -1,0 +1,15 @@
+ion-content>main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+ion-content>main>img {
+    background-color: rgb(250, 224, 162);
+}
+
+ion-content>main>div {
+    margin: 1rem;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

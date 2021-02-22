@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar color="medium">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Heroes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <main>
+        <!-- Luego haremos un ngFor para cargar un div por heroe que lo traeremos del firestore los heroes-->
+        <ion-card class="content-hero" *ngFor="let hero of heroes">
+            <img class="imagehero" [src]='hero.data.src' alt="imagen del heroes" >
+            <ion-card-header>
+              <ion-card-title class="titulo">{{hero.data.nombre | uppercase}} </ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="infoHero">
+                {{hero.data.info}}
+            </ion-card-content>
+          </ion-card>
+    </main>
+</ion-content>

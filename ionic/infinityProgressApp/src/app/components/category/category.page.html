@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Lista de Ejercicios</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <main>
+        <!-- LISTA DE CATEGORIAS PARA ENTRENAR -->
+        <div *ngFor="let element of categories; let i = index" (click)="goToRutine(i)">
+            <span>{{element}}</span>
+        </div>
+    </main>
+</ion-content>

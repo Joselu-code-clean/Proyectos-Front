@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar color="medium">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Cartas</ion-title>
+    </ion-toolbar>
+    <ion-searchbar showCancelButton="focus" (ionChange)="buscar( $event )">
+
+    </ion-searchbar>
+</ion-header>
+
+<ion-content>
+    <!-- Con un ngFor cargaremos todas las imagenes con el mismo tamaño -->
+    <main>
+        <img width="100%" height="auto" [src]="card.data.img" alt="Titulo de la imagen" *ngFor="let card of allCards | filtro: textBuscar: 'titulo'">
+    </main>
+</ion-content>

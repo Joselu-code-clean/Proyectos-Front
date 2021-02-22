@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar color="medium">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Heroe</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <main class="content-main">
+        <div class="perfil" *ngFor="let hero of currentHeroe">
+            <img class="imgH" [src]="hero.data.src" [alt]="hero.data.nombre">
+            <p class="information">{{hero.data.info}}</p>
+        </div>
+        <h1>Cartas de la clase</h1>
+        <div class="cartas">
+            <img class="card" [src]="card.data.img" alt="cartas" *ngFor="let card of cardsOfHero">
+        </div>
+    </main>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Login</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <main>
+        <img src="../../../assets/images/loginIP.jpeg" alt="fondo de hearthstone">
+        <div id="dashboard">
+            <ion-item>
+                <ion-label>Email:</ion-label>
+                <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Contraseña:</ion-label>
+                <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+            </ion-item>
+            <div class="botonera">
+                <button size="medium" (click)="onLogin()">Iniciar Sesion</button>
+                <button size="medium" routerLink="/register">Registrarse</button>
+            </div>
+        </div>
+    </main>
+</ion-content>

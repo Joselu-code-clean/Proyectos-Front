@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "infinityProgressApp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

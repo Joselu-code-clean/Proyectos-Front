@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar color="medium">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Home
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <main>
+        <img src="./../../../assets\pages\home\logo\logo.png" alt="Logo de la pagina" width="100%" height="auto">
+        <div>
+            <!-- Con un ngFor cargaremos todos los nombres de la coleccion de heroes y le importamos sus imagenes -->
+            <span *ngFor="let heroe of heroes; let i = index" (click)="enviarHeroe(i)"><p>{{heroe.data.nombre}}</p></span>
+        </div>
+    </main>
+
+
+</ion-content>

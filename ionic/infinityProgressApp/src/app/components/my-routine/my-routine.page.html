@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Mis Rutinas</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <main>
+        <!-- LISTA DE RUTINAS DISPONIBLES DE DICHO USUARIO-->
+        <div *ngFor="let element of routinesUser.routines; let i = index">
+            <span (click)="goToRutineChoose(element)">{{element}}</span>
+            <ion-icon (click)="deleteRoutine(i)" name="trash-outline"></ion-icon>
+        </div>
+    </main>
+</ion-content>

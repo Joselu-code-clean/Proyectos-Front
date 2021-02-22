@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-icon class="bBack" name="arrow-undo-circle-outline" (click)="presentConfirm()"></ion-icon>
+        </ion-buttons>
+        <ion-title>Ejercicio {{currentExercise + 1}}/{{totalExercise}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <section>
+
+        <!-- header -->
+        <header>
+            <div>
+                <img src="./../../../assets/db/GIF/{{exercise.GIF}}">
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <div>
+                <p class="title">{{exercise.name}}</p>
+                <p class="showData" *ngIf="isTime">{{time}}</p>
+                <p class="showData" *ngIf="isTime">segundos</p>
+                <div *ngIf="isAttemps">
+                    <p class="showData">{{attemps}}</p>
+                    <p class="showData">Intentos</p>
+                </div>
+
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <ion-footer>
+                <button *ngIf="!ready" (click)="startExercise()">Comenzar</button>
+                <button class="secondBtn" *ngIf="ready && !finishExercise">Finalizar</button>
+                <button class="thirdBtn" *ngIf="finishExercise" (click)="goToTimeRelax()">Finalizar</button>
+            </ion-footer>
+        </footer>
+
+    </section>
+
+</ion-content>

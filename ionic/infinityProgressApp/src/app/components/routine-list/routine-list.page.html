@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Lista de Rutinas</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <main>
+        <!-- LISTA DE RUTINAS DISPONIBLES -->
+        <div *ngFor="let element of routines; let i = index">
+            <span (click)="goToRutineChoose(i)">{{element.nameRoutine}}</span>
+            <ion-icon (click)="favRutineEmply(i)" *ngIf="!element.fav" name="star-outline"></ion-icon>
+            <ion-icon class="fillFav" (click)="favRutineFill(i)" *ngIf="element.fav" name="star"></ion-icon>
+        </div>
+    </main>
+</ion-content>

@@ -1,0 +1,49 @@
+ion-header {
+    background-color: black;
+}
+
+ion-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+#dashboard {
+    --ion-background-color: rgba(255, 255, 255, 0);
+    --ion-text-color: white;
+}
+
+.botonera {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    width: 100vw;
+}
+
+ion-item {
+    background-color: rgba(51, 51, 51, 0.514);
+    margin: .5rem;
+}
+
+.botonera>button {
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 40%;
+    min-width: 40%;
+    padding: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 0 .5rem;
+    background-image: linear-gradient(180deg, #000000cc, #5a5a5a);
+    border-radius: 6px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .45);
+    text-shadow: 0 0 4px rgba(0, 0, 0, .3), 0 0 8px rgba(0, 0, 0, .3);
+    letter-spacing: 3px;
+    font-size: 1em;
+}
+
+p {
+    width: 100%;
+    color: yellow;
+    font-size: .5;
+    margin-left: .5rem;
+}

@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Lista de Ejercicios</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <!-- LISTA DE LOS EJERCICIOS DE LA RUTINA SELECCIONADA -->
+    <ion-list>
+        <ion-item *ngFor="let item of listExercise">
+            <ion-avatar slot="start">
+                <img src="./../../../assets/db/GIF/{{item.GIF}}">
+            </ion-avatar>
+            <ion-label>
+                <h2>{{item.name}}</h2>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <!-- BOTON DE COMIENZO -->
+    <footer>
+        <button (click)="startExercises()">Comenzar</button>
+    </footer>
+</ion-content>

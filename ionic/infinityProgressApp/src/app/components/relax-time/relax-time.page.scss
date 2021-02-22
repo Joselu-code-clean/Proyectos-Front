@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "HD" "MN" "MN" "MN" "FOOT";
+    background-image: url(../../../assets/images/rest.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section>header,
+main,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section>header {
+    grid-area: HD;
+}
+
+section>header>h1 {
+    font-size: 4rem;
+}
+
+section>main {
+    grid-area: MN;
+}
+
+section>main>div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 2rem;
+    color: wheat;
+    font-size: 5rem;
+    background-color: blue;
+    border-radius: 45%;
+    border: yellow solid 1px;
+    background: linear-gradient( 85deg, rgb(67, 0, 252), rgb(0, 162, 255));
+}
+
+section>footer {
+    grid-area: FOOT;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section>footer>button {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    font-size: .8rem;
+    padding: 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: white;
+    background-color: blue;
+    border-radius: 25%;
+    border: yellow solid 1px;
+    background: linear-gradient( 85deg, rgb(67, 0, 252), rgb(0, 162, 255));
+    letter-spacing: 3px;
+}
