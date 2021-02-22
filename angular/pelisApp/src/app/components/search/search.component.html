@@ -1,0 +1,5 @@
+<div class="cont">
+    <h2 class="title">Buscador:</h2>
+    <input name="buscador" #termino type="text" (keyup.enter)="buscar(termino.value)" class="form-control" placeholder="Buscador Pelicula" />
+</div>
+<app-tarjetas [items]="peliculas"></app-tarjetas>

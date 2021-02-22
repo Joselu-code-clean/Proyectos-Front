@@ -1,0 +1,65 @@
+.contenedor2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.623);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor2>.formulario {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    width: 40%;
+    height: 50%;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(85, 85, 84);
+    padding: 2rem;
+}
+
+.contenedor2>.formulario>h4 {
+    color: red;
+    font-size: 1rem;
+}
+
+.contenedor2>.formulario>a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: .8rem;
+    margin: 15px;
+}
+
+.contenedor2>.formulario>a:hover {
+    color: rgb(241, 248, 139);
+    text-decoration: none;
+    font-size: .90rem;
+}
+
+.contenedor2>.formulario>label {
+    margin: 10px 0 0 0;
+}
+
+.contenedor2>.formulario>button {
+    text-transform: uppercase;
+    font-family: "Eurostile Extd", "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    background-origin: border-box;
+    font-size: 18px;
+    width: 100%;
+    border-width: 17px 60px;
+    border-style: solid;
+    border-color: transparent;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    background-color: #EC5252;
+    color: rgb(255, 255, 255);
+}
+
+.contenedor2>.formulario>button:hover {
+    background-color: cornflowerblue;
+}

@@ -1,0 +1,8 @@
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 4rem;
+    max-width: 100vw;
+}

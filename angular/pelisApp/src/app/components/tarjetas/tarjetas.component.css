@@ -1,0 +1,15 @@
+img {
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+.btnMain {
+    border: #698BA6 solid 1px;
+}
+
+.btn {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: rgb(49, 138, 177);
+}

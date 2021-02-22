@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" [routerLink]="['home']">PelisApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" routerLinkActive="active" *ngIf="ocultar()">
+                <a class="nav-link" [routerLink]="['home']">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" *ngIf="ocultar()">
+                <a class="nav-link" [routerLink]="['search']">Buscar <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 paddingLeft" *ngIf="ocultar()">
+            <input (keyup.enter)="searchMovies(enteredText.value)" #enteredText class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button (click)="searchMovies(enteredText.value)" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar </button>
+        </form>
+        <div class="form-inline my-2 my-lg-0 botonera" *ngIf="!ocultar()">
+            <span class="nav-item" routerLinkActive="active">
+                <button class="btn btn-outline-light"  routerLink='signup'>Sign up</button>
+            </span>
+            <span class="nav-item" routerLinkActive="active">
+                <button class="btn btn-outline-light"  routerLink='login'>Log in</button>
+            </span>
+        </div>
+        <div class="form-inline my-2 my-lg-0 botonera" *ngIf="ocultar()">
+            <span class="nav-item" routerLinkActive="active">
+                <button class="btn btn-outline-danger" (click)="logout()" [routerLink]="['/login']" >Log Out</button>
+            </span>
+        </div>
+    </div>
+</nav>

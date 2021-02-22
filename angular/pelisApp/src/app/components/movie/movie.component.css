@@ -1,0 +1,37 @@
+.movie {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.pelicula {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+img {
+    min-width: 350px;
+}
+
+.texto {
+    padding: 0 0 0 2em;
+}
+
+.botonera button {
+    margin: 0 8px 1em 0;
+}
+
+.cines {
+    padding: 0;
+    list-style: none
+}

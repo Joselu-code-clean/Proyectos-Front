@@ -1,0 +1,24 @@
+<div class="contenedor2">
+    <main>
+        <form class="formulario" (ngSubmit)="validarFormulario(formulario)" #formulario="ngForm">
+            <!-- Correo-->
+            <label for="exampleInputEmail1">Direccion E-mail:</label>
+            <h4 *ngIf="formulario.submitted && formulario.controls['email'].errors" class="text-danger animated fadeIn">Error en el email</h4>
+            <input type="email" name="email" class="form-control" [(ngModel)]="usuario.email" required email id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <!-- Password-->
+            <label for="exampleInputPassword1">Contraseña:</label>
+            <h4 *ngIf="formulario.submitted && formulario.controls['password'].errors" class="text-danger animated fadeIn">Error en el password</h4>
+            <input type="password" name="password" [(ngModel)]="usuario.password" required minlength="6" password class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <!-- Facebook -->
+            <div class="form-group">
+                <div class="btnFace btn-block btn-fb" (click)="onLoginFacebook()">
+                    <img src="./../../../assets/facebook.png" alt="fb-icon" height="25px" width="25px"> Log in con Facebook
+                </div>
+            </div>
+            <!-- Boton -->
+            <a [routerLink]="'/signup'">¿No tienes una cuenta? Registrate</a>
+            <button type="submit" name="button" class="btn btn-primary btnSubmit">Login</button>
+        </form>
+    </main>
+
+</div>

@@ -1,0 +1,16 @@
+.centrado {
+    width: 85%;
+    margin: auto;
+}
+
+.fondo {
+    background-color: lightgray;
+}
+
+.centrado:nth-child(0) {
+    padding: 3.5em 0;
+}
+
+.centrado:nth-child(1) {
+    padding: 2em 0 0 0;
+}

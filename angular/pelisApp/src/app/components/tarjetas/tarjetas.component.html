@@ -1,0 +1,12 @@
+<div class="card-columns m-5 animated fadeIn">
+    <div *ngFor="let item of items" class="card puntero">
+        <img class="card-img-top" [src]="item | peliculaBackdrop" alt="Card image cap" />
+        <div class="card-body">
+            <h3 class="card-title">{{ item.title }}</h3>
+            <p class="card-text">{{ item.overview }}</p>
+        </div>
+        <div class="btnMain">
+            <a [routerLink]="'/tarjeta'" (click)="mostrarPelicula(item)" class=" btn btn-primary">Ver más...</a>
+        </div>
+    </div>
+</div>

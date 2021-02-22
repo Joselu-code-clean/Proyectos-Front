@@ -1,0 +1,27 @@
+<h1>{{titulo}}</h1>
+<div class="contentMain">
+    <div class="peli1">
+        <img (click)="verPelicula(peliculas[0])" [src]="peliculas[0] | peliculaBackdrop">
+        <div class="titulo">{{peliculas[0].title}}</div>
+    </div>
+    <div class="peli2">
+        <img (click)="verPelicula(peliculas[1])" [src]="peliculas[1] | peliculaBackdrop">
+        <div class="titulo">{{peliculas[1].title}}</div>
+    </div>
+    <div class="peli3">
+        <img (click)="verPelicula(peliculas[2])" [src]="peliculas[2] | peliculaBackdrop">
+        <div class="titulo">{{peliculas[2].title}}</div>
+    </div>
+    <div class="peli4">
+        <img (click)="verPelicula(peliculas[3])" [src]="peliculas[3] | peliculaBackdrop">
+        <div class="titulo">{{peliculas[3].title}}</div>
+    </div>
+    <div class="peli5">
+        <img (click)="verPelicula(peliculas[4])" [src]="peliculas[4] | peliculaBackdrop">
+        <div class="titulo">{{peliculas[4].title}}</div>
+    </div>
+    <div class="peli6">
+        <img (click)="verPelicula(peliculas[5])" [src]="peliculas[5] | peliculaBackdrop">
+        <div class="titulo">{{peliculas[5].title}}</div>
+    </div>
+</div>
